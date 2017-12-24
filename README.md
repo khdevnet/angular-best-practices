@@ -33,7 +33,7 @@ Code Style
 9. Implementing lifecycle hook interfaces
 10. When to create components
 
-Perfomance
+Angular performance
 1. Ahead-of-time compilation (Compile before deploy)
    when use angular-cli
    npm run build -- --prod
