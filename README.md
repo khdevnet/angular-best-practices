@@ -5,26 +5,21 @@ How to run
 
 Angular Best practices recommendations
 
-1. Use angular-cli
-2. Prefer LIFT approach
-   - Locate code quickly
-   - Identify code in glance
-   - Flatten folder structure
-   - Try do not DRY
-2. Folder structure (Group feature first then, component first)
-   App Module,
-   - Root of the application 
-   Core Module,
-   - shared singelton services (shared across multiply modules in app) angular create new service for each lazy loaded service
-   - app level component (navigation bar)
-   Shared Module, 
-   - shared components, directives and pipes (load spinner)
-   Feature Module
-   - feature level components, directives, pipes, services
+1. Use angular-cli.
+2. Prefer LIFT approach:
+   - Locate code quickly;
+   - Identify code in glance;
+   - Flatten folder structure;
+   - Try do not DRY.
+3. Folder structure (Group feature first then, component first):<br />
+   - App Module (root of the application)
+   - Core Module (shared singelton services across multiply modules in app, angular create new service for each lazy loaded service, app level component for example navigation bar)
+   - Shared Module (shared components, directives and pipes for example load spinner)
+   - Feature Module (feature level components, directives, pipes, services)
 
-3. One item per file (use multiply component for on big component)
-4. File naming (use *.component, *.service, *.model)
-5. Make file names and class names consistence
+4. One item per file (use multiply component for on big component)
+5. File naming (use *.component, *.service, *.model)
+6. Make file names and class names consistence
 
 Code Style
 1. Single Responsibility
@@ -46,14 +41,11 @@ Perfomance
 2. Lazy Loading
    declare in route loadChildren command
 
-3. Size of the bundles
-npm run build -- --prod --source-maps=true
-then use the source map explorer
-use explicit imports to avoid loading of full library
-import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/observable/empty';
-import 'rxjs/add/operator/delay';
+3. Size of the bundles<br />
+   npm run build -- --prod --source-maps=true<br />
+   then use the source map explorer<br />
+   use explicit imports to avoid loading of full library<br />
+   import { Observable } from 'rxjs/Observable';<br />
+   import 'rxjs/add/operator/map';<br />
 
 3. Use pure pipes
