@@ -49,3 +49,5 @@ Angular performance
    import 'rxjs/add/operator/map';<br />
 
 3. Use pure pipes
+4. Use trackBy to re-render only items what was changed
+5. Don't Lazy-Load the Default Route
